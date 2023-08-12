@@ -9,4 +9,6 @@ The package which mainly allow us to make it gorilla/mux -> Router Package, Gorm
 
 I have created a custom ParseBody func to parse the body into json
 
-And used folder structure please upvote.
+And used Proper folder structure
+
+feel free to fork.
