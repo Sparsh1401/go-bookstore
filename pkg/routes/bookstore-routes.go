@@ -1,12 +1,13 @@
-package main
+package routes
 
 import (
+	"github.com/Sparsh1401/go-bookstore/pkg/controllers"
 	"github.com/gorilla/mux"
 )
 
 var RegisterBookStoreRoutes = func(router *mux.Router) {
-	router.HandleFunc("/book", controllers.getBook).Methods("GET")
-	router.HandleFunc("/book", controllers.createBook).Methods("POST")
-	router.HandleFunc("/book/{bookId}", controllers.getBookById).Methods("GET")
-	router.HandleFunc("/book/{bookId}", controllers.deleteBook).Methods("DELETE")
+	router.HandleFunc("/book", controllers.GetBooks).Methods("GET")
+	router.HandleFunc("/book", controllers.CreateBook).Methods("POST")
+	router.HandleFunc("/book/{bookId}", controllers.GetBookById).Methods("GET")
+	// router.HandleFunc("/book/{bookId}", controllers.DeleteBook).Methods("DELETE")
 }
